@@ -1,0 +1,22 @@
+{
+  "name": "finpilot-ai",
+  "version": "1.0.0",
+  "description": "Smart Personal Finance Analyzer & Self-Manager",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
+    "build": "npm run build --workspace=backend --if-present && npm run build --workspace=frontend --if-present",
+    "start": "npm run start --workspace=backend",
+    "lint": "npm run lint --workspace=backend --if-present && npm run lint --workspace=frontend --if-present",
+    "test:api": "node test_api.js",
+    "test:full": "node test_full_suite.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

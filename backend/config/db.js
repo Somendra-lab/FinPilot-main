@@ -1,0 +1,1 @@
+// This file has been moved to src/config/db.js — please delete this file and the backend/config/ directory.

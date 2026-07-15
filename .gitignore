@@ -1,0 +1,82 @@
+# Dependencies
+node_modules/
+**/node_modules/
+jspm_packages/
+web_modules/
+
+# Environment Variables & Secrets (Crucial to prevent leaks)
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+.env.test
+.env.production.local
+.env.development.local
+.env.staging.local
+.env.test.local
+.env.example.local
+**/.env
+**/.env.local
+**/.env.*
+
+# Build Outputs & Production Bundles
+dist/
+**/dist/
+build/
+**/build/
+out/
+**/out/
+.next/
+**/.next/
+.turbo/
+**/.turbo/
+
+# Logs & Diagnostics
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing & Coverage Caches
+coverage/
+**/coverage/
+.nyc_output/
+cypress/screenshots/
+cypress/videos/
+
+# IDEs, Text Editors, & System Files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Cache & Build Caches
+.eslintcache
+.parcel-cache
+.cache/
+.vite
+.yarn-integrity
+pnpm-lock.yaml
+
+# Ignore all markdown files except README.md
+*.md
+**/*.md
+!README.md
+!**/README.md
